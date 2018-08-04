@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{public/layouts/mainlayout}">
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home/index.css}" />
+    <title>College Registration System - a Spring Security 5.0 demo webapp</title>
+</head>
+<body>
+<th:block layout:fragment="content">
+    <h3>Welcome to the CS425-SWE College Registration System (CRS)</h3>
+    <hr/>
+    <p>
+        This is a demo <a target="_blank" href="https://spring.io/projects/spring-security">Spring Security</a> / Spring Boot WebApp, for the CS425-SWE course.
+        It features a basic demonstration of the following technologies for developing
+        a secured Web Application, on the Spring platform:
+    </p>
+    <ul>
+        <li>Spring Security 5.0 including use of OAuth and OpenID Connect services,
+            provided by <a target="_blank" href="https://console.developers.google.com">Google</a>, Okta,
+            Github, Twitter, Facebook etc.</li>
+        <li>Spring Web MVC with Thymeleaf View Template Engine</li>
+        <li>Spring Data JPA - Java Persistence API using Hibernate</li>
+        <li>Bootstrap for CSS styling</li>
+        <li><a href="http://www.mysql.com/" target="_blank">MySQL Database</a></li>
+    </ul>
+</th:block>
+
+<th:block layout:fragment="footer"></th:block>
+
+</body>
+</html>

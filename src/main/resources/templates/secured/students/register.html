@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{secured/layouts/mainlayout}">
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home/index.css}" />
+    <title>College Registration System - a Spring Security 5.0 demo webapp</title>
+</head>
+<body>
+    <th:block layout:fragment="content">
+
+        <h3>Self-service Registration</h3>
+        <hr/>
+        <div>
+            <div style="font-size: 1em">
+                To do your registration, please first make sure to read the
+                instructions and key points provided below. And then click the
+                "I'm Ready to Register" button, located below.<br/><br/>
+
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived not
+                only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with
+                the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus PageMaker
+                including versions of Lorem Ipsum.
+            </div>
+            <div style="float: left; margin-top: 3em;">
+                <a class="btn btn-outline-success btn-lg" href="/crs/secured/students/new">
+                    I'm Ready to Register
+                </a>
+            </div>
+        </div>
+        <p>&nbsp;</p>
+
+    </th:block>
+
+    <th:block layout:fragment="footer"></th:block>
+
+</body>
+</html>
