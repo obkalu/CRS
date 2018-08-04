@@ -34,10 +34,12 @@
                 <!--<a class="nav-link" href="#">About</a>-->
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <form action="#" class="form-inline my-2 my-lg-0" th:action="@{/logout}">
             <!--<input class="form-control mr-sm-2" type="text" placeholder="Search">-->
-            <a style="color: #ffffff; margin-right: 0em;" class="nav-link" href="#">John Doe</a>
-            <a class="btn btn-secondary">Sign Out</a>
+            <a style="color: #ffffff; margin-right: 0em;" class="nav-link" href="#">
+                <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+            </a>
+            <input type="submit" class="btn btn-secondary" value="Sign Out" />
         </form>
     </div>
 </nav>
