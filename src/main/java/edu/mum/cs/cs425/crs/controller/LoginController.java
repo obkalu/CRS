@@ -22,10 +22,10 @@ public class LoginController {
     @PostMapping(value = "/crs/login")
     public String addNewProduct(@Valid @ModelAttribute("user") User user,
                                 BindingResult bindingResult, Model model) {
-//        if (bindingResult.hasErrors()) {
-//            model.addAttribute("errors", bindingResult.getAllErrors());
-//            return "public/login";
-//        }
+        if (bindingResult.hasErrors()) {
+            model.addAttribute("errors", bindingResult.getAllErrors());
+            return "public/login";
+        }
 //        user = userLoginService.auth(user);
         return "redirect:/crs/home";
     }

@@ -18,7 +18,7 @@ public class CRSApplicationSecurityConfiguration extends WebSecurityConfigurerAd
         http
             .authorizeRequests()
                 .antMatchers("/css/**", "/js/**", "/images/**", "/", "/crs", "/crs/home", "/crs/about").permitAll()
-//                .antMatchers("/crs/secured/students/register").permitAll()
+                .antMatchers("/crs/secured/students/register").permitAll()
                 .anyRequest().authenticated()
                 .and()
             .formLogin()
